@@ -1,84 +1,82 @@
-<!-- TradingView Market Overview Widget - Professional Global Template -->
-<!-- Premium Dashboard Template for Global Clients -->
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="no-referrer">
+    <style>
+        body, html { margin: 0; padding: 0; height: 100%; overflow: hidden; background: transparent; }
+        .tradingview-widget-container { height: 100vh; width: 100%; }
+    </style>
+</head>
+<body>
 <div class="tradingview-widget-container">
   <div class="tradingview-widget-container__widget"></div>
-  <div class="tradingview-widget-copyright">
-    <a href="https://www.tradingview.com/markets/" rel="noopener nofollow" target="_blank">
-      <span class="blue-text">World markets</span>
-    </a> 
-    <span class="trademark">by TradingView</span>
-  </div>
-  
   <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-overview.js" async>
   {
     "colorTheme": "dark",
     "dateRange": "12M",
     "locale": "en",
     "width": "100%",
-    "height": "680",
+    "height": "100%",
     "largeChartUrl": "",
     "isTransparent": false,
     "showFloatingTooltip": true,
     "showSymbolLogo": true,
     "showChart": true,
-    
     "plotLineColorGrowing": "rgba(0, 255, 130, 1)",
     "plotLineColorFalling": "rgba(255, 67, 67, 1)",
-    "gridLineColor": "rgba(255,255,255,0.08)",
+    "gridLineColor": "rgba(255, 255, 255, 0.08)",
     "scaleFontColor": "#E0E0E0",
     "symbolActiveColor": "rgba(0, 255, 130, 0.15)",
-    
     "tabs": [
       {
-        "title": "Major Indices",
+        "title": "Indices",
         "symbols": [
-          { "s": "FOREXCOM:SPXUSD", "d": "S&P 500" },
+          { "s": "FOREXCOM:SPXUSD", "d": "S&P 500 Index" },
           { "s": "FOREXCOM:NSXUSD", "d": "Nasdaq 100" },
-          { "s": "FOREXCOM:DJI", "d": "Dow Jones" },
-          { "s": "INDEX:HSI", "d": "Hang Seng" },
-          { "s": "INDEX:000001", "d": "Shanghai Composite" },
+          { "s": "FOREXCOM:DJI", "d": "Dow Jones 30" },
+          { "s": "INDEX:DXY", "d": "US Dollar Index" },
+          { "s": "INDEX:HSI", "d": "Hang Seng Index" },
           { "s": "INDEX:NKY", "d": "Nikkei 225" },
-          { "s": "INDEX:DEU40", "d": "DAX" },
-          { "s": "INDEX:UKXGBP", "d": "FTSE 100" }
+          { "s": "INDEX:DEU40", "d": "DAX 40 (Germany)" }
         ]
       },
       {
         "title": "Futures",
         "symbols": [
-          { "s": "CME_MINI:ES1!", "d": "S&P 500 Futures" },
-          { "s": "CME_MINI:NQ1!", "d": "Nasdaq 100 Futures" },
-          { "s": "CME_MINI:YM1!", "d": "Dow Jones Futures" },
+          { "s": "CME_MINI:ES1!", "d": "S&P 500 E-mini" },
+          { "s": "CME_MINI:NQ1!", "d": "Nasdaq 100 E-mini" },
           { "s": "NYMEX:CL1!", "d": "WTI Crude Oil" },
-          { "s": "COMEX:GC1!", "d": "Gold Futures" },
+          { "s": "COMEX:GC1!", "d": "Gold" },
           { "s": "CME:BTC1!", "d": "Bitcoin Futures" },
           { "s": "NYMEX:NG1!", "d": "Natural Gas" }
         ]
       },
       {
-        "title": "Government Bonds",
+        "title": "Bonds",
         "symbols": [
-          { "s": "TVC:US10", "d": "US 10-Year Yield" },
-          { "s": "TVC:US30", "d": "US 30-Year Yield" },
-          { "s": "TVC:US02", "d": "US 2-Year Yield" },
-          { "s": "EUREX:FGBL1!", "d": "German 10-Year Bund" },
+          { "s": "TVC:US02Y", "d": "US 2-Year Yield" },
+          { "s": "TVC:US10Y", "d": "US 10-Year Yield" },
+          { "s": "TVC:US30Y", "d": "US 30-Year Yield" },
+          { "s": "EUREX:FGBL1!", "d": "Euro Bund (Germany)" },
           { "s": "TVC:JP10Y", "d": "Japan 10-Year Yield" }
         ]
       },
       {
-        "title": "Forex Majors",
+        "title": "Forex",
         "symbols": [
-          { "s": "FX:EURUSD", "d": "EUR/USD" },
-          { "s": "FX:USDJPY", "d": "USD/JPY" },
-          { "s": "FX:GBPUSD", "d": "GBP/USD" },
-          { "s": "FX:AUDUSD", "d": "AUD/USD" },
-          { "s": "FX:USDCNH", "d": "USD/CNH" },
-          { "s": "FX:USDCHF", "d": "USD/CHF" },
-          { "s": "FX:USDCAD", "d": "USD/CAD" }
+          { "s": "FX:EURUSD", "d": "EUR / USD" },
+          { "s": "FX:USDJPY", "d": "USD / JPY" },
+          { "s": "FX:GBPUSD", "d": "GBP / USD" },
+          { "s": "FX:AUDUSD", "d": "AUD / USD" },
+          { "s": "FX:USDCNH", "d": "USD / CNH" },
+          { "s": "FX:USDCHF", "d": "USD / CHF" }
         ]
       }
     ]
   }
   </script>
 </div>
-<!-- TradingView Widget END -->
+</body>
+</html>
